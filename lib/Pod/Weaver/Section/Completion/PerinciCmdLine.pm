@@ -1,7 +1,7 @@
 package Pod::Weaver::Section::Completion::PerinciCmdLine;
 
 our $DATE = '2014-11-23'; # DATE
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 use 5.010001;
 use Moose;
@@ -44,6 +44,10 @@ sub weave_section {
     # put here to avoid confusing Pod::Weaver
     my $h2 = '=head2';
 
+    my $func_name = $command_name;
+    $func_name =~ s/[^A-Za-z0-9]+/_/g;
+    $func_name = "_$func_name";
+
     my $text = <<_;
 This script has shell tab completion capability with support for several shells.
 
@@ -71,6 +75,18 @@ To activate tcsh completion for this script, put:
  complete $command_name 'p/*/`$command_name`/'
 
 in your tcsh startup (e.g. C<~/.tcshrc>). Your next shell session will then
+recognize tab completion for the command. Or, you can also directly execute the
+line above in your shell to activate immediately.
+
+$h2 zsh
+
+To activate zsh completion for this script, put:
+
+ $func_name() { read -l; local cl="\$REPLY"; read -ln; local cp="\$REPLY"; reply=(`COMP_LINE="\$cl" COMP_POINT="\$cp" $command_name`) }
+
+ compctl -K $func_name $command_name
+
+in your zsh startup (e.g. C<~/.zshrc>). Your next shell session will then
 recognize tab completion for the command. Or, you can also directly execute the
 line above in your shell to activate immediately.
 
@@ -103,7 +119,7 @@ Pod::Weaver::Section::Completion::PerinciCmdLine - Add a COMPLETION section for 
 
 =head1 VERSION
 
-This document describes version 0.04 of Pod::Weaver::Section::Completion::PerinciCmdLine (from Perl distribution Pod-Weaver-Section-Completion-PerinciCmdLine), released on 2014-11-23.
+This document describes version 0.05 of Pod::Weaver::Section::Completion::PerinciCmdLine (from Perl distribution Pod-Weaver-Section-Completion-PerinciCmdLine), released on 2014-11-23.
 
 =head1 SYNOPSIS
 
