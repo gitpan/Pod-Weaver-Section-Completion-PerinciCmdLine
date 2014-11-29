@@ -56,7 +56,7 @@
          "web" : "https://github.com/perlancar/perl-Pod-Weaver-Section-BashCompletion-PerinciCmdLine"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018002"
@@ -259,7 +259,7 @@
                      {
                         "class" : "Pod::Weaver::Section::Completion::PerinciCmdLine",
                         "name" : "@Author::PERLANCAR/Completion::PerinciCmdLine",
-                        "version" : "0.04"
+                        "version" : "0.05"
                      },
                      {
                         "class" : "Pod::Weaver::Section::Homepage::DefaultCPAN",

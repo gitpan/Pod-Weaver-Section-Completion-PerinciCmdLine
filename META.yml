@@ -25,7 +25,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Completion-PerinciCmdLine
   homepage: https://metacpan.org/release/Pod-Weaver-Section-Completion-PerinciCmdLine
   repository: git://github.com/perlancar/perl-Pod-Weaver-Section-BashCompletion-PerinciCmdLine.git
-version: '0.05'
+version: '0.06'
 x_Dist_Zilla:
   perl:
     version: '5.018002'
@@ -188,7 +188,7 @@ x_Dist_Zilla:
             -
               class: Pod::Weaver::Section::Completion::PerinciCmdLine
               name: '@Author::PERLANCAR/Completion::PerinciCmdLine'
-              version: '0.04'
+              version: '0.05'
             -
               class: Pod::Weaver::Section::Homepage::DefaultCPAN
               name: '@Author::PERLANCAR/Homepage::DefaultCPAN'
