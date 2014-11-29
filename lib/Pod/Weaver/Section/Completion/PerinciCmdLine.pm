@@ -1,7 +1,7 @@
 package Pod::Weaver::Section::Completion::PerinciCmdLine;
 
 our $DATE = '2014-11-29'; # DATE
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 use 5.010001;
 use Moose;
@@ -93,7 +93,7 @@ $h2 zsh
 
 To activate zsh completion for this script, put:
 
- $func_name() { read -l; local cl="\$REPLY"; read -ln; local cp="\$REPLY"; reply=(`COMP_LINE="\$cl" COMP_POINT="\$cp" $command_name`) }
+ $func_name() { read -l; local cl="\$REPLY"; read -ln; local cp="\$REPLY"; reply=(`COMP_SHELL=zsh COMP_LINE="\$cl" COMP_POINT="\$cp" $command_name`) }
 
  compctl -K $func_name $command_name
 
@@ -130,7 +130,7 @@ Pod::Weaver::Section::Completion::PerinciCmdLine - Add a COMPLETION section for 
 
 =head1 VERSION
 
-This document describes version 0.06 of Pod::Weaver::Section::Completion::PerinciCmdLine (from Perl distribution Pod-Weaver-Section-Completion-PerinciCmdLine), released on 2014-11-29.
+This document describes version 0.07 of Pod::Weaver::Section::Completion::PerinciCmdLine (from Perl distribution Pod-Weaver-Section-Completion-PerinciCmdLine), released on 2014-11-29.
 
 =head1 SYNOPSIS
 
