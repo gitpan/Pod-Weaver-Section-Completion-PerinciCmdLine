@@ -32,6 +32,7 @@
             "Moose" : "0",
             "Moose::Autobox" : "0",
             "Pod::Weaver::Role::Section" : "0",
+            "Pod::Weaver::Role::SectionText::SelfCompletion" : "0",
             "perl" : "5.010001"
          }
       },
@@ -56,7 +57,7 @@
          "web" : "https://github.com/perlancar/perl-Pod-Weaver-Section-BashCompletion-PerinciCmdLine"
       }
    },
-   "version" : "0.07",
+   "version" : "0.08",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018002"
@@ -170,7 +171,7 @@
          {
             "class" : "Dist::Zilla::Plugin::OurDate",
             "name" : "@Author::PERLANCAR/OurDate",
-            "version" : "0.01"
+            "version" : "0.02"
          },
          {
             "class" : "Dist::Zilla::Plugin::PodWeaver",
@@ -239,7 +240,7 @@
                      {
                         "class" : "Pod::Weaver::Plugin::Rinci",
                         "name" : "@Author::PERLANCAR/Rinci",
-                        "version" : "0.18"
+                        "version" : "0.21"
                      },
                      {
                         "class" : "Pod::Weaver::Section::Leftovers",
@@ -254,12 +255,12 @@
                      {
                         "class" : "Pod::Weaver::Section::Completion::GetoptLongComplete",
                         "name" : "@Author::PERLANCAR/Completion::GetoptLongComplete",
-                        "version" : "0.03"
+                        "version" : "0.05"
                      },
                      {
                         "class" : "Pod::Weaver::Section::Completion::PerinciCmdLine",
                         "name" : "@Author::PERLANCAR/Completion::PerinciCmdLine",
-                        "version" : "0.06"
+                        "version" : "0.07"
                      },
                      {
                         "class" : "Pod::Weaver::Section::Homepage::DefaultCPAN",

@@ -20,12 +20,13 @@ requires:
   Moose: '0'
   Moose::Autobox: '0'
   Pod::Weaver::Role::Section: '0'
+  Pod::Weaver::Role::SectionText::SelfCompletion: '0'
   perl: '5.010001'
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Completion-PerinciCmdLine
   homepage: https://metacpan.org/release/Pod-Weaver-Section-Completion-PerinciCmdLine
   repository: git://github.com/perlancar/perl-Pod-Weaver-Section-BashCompletion-PerinciCmdLine.git
-version: '0.07'
+version: '0.08'
 x_Dist_Zilla:
   perl:
     version: '5.018002'
@@ -116,7 +117,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::OurDate
       name: '@Author::PERLANCAR/OurDate'
-      version: '0.01'
+      version: '0.02'
     -
       class: Dist::Zilla::Plugin::PodWeaver
       config:
@@ -172,7 +173,7 @@ x_Dist_Zilla:
             -
               class: Pod::Weaver::Plugin::Rinci
               name: '@Author::PERLANCAR/Rinci'
-              version: '0.18'
+              version: '0.21'
             -
               class: Pod::Weaver::Section::Leftovers
               name: '@Author::PERLANCAR/Leftovers'
@@ -184,11 +185,11 @@ x_Dist_Zilla:
             -
               class: Pod::Weaver::Section::Completion::GetoptLongComplete
               name: '@Author::PERLANCAR/Completion::GetoptLongComplete'
-              version: '0.03'
+              version: '0.05'
             -
               class: Pod::Weaver::Section::Completion::PerinciCmdLine
               name: '@Author::PERLANCAR/Completion::PerinciCmdLine'
-              version: '0.06'
+              version: '0.07'
             -
               class: Pod::Weaver::Section::Homepage::DefaultCPAN
               name: '@Author::PERLANCAR/Homepage::DefaultCPAN'

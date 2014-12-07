@@ -3,9 +3,9 @@ NAME
     section for Perinci::CmdLine-based scripts
 
 VERSION
-    This document describes version 0.07 of
+    This document describes version 0.08 of
     Pod::Weaver::Section::Completion::PerinciCmdLine (from Perl distribution
-    Pod-Weaver-Section-Completion-PerinciCmdLine), released on 2014-11-29.
+    Pod-Weaver-Section-Completion-PerinciCmdLine), released on 2014-12-07.
 
 SYNOPSIS
     In your "weaver.ini":

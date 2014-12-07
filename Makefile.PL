@@ -22,7 +22,8 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Moose" => 0,
     "Moose::Autobox" => 0,
-    "Pod::Weaver::Role::Section" => 0
+    "Pod::Weaver::Role::Section" => 0,
+    "Pod::Weaver::Role::SectionText::SelfCompletion" => 0
   },
   "TEST_REQUIRES" => {
     "File::Spec" => 0,
@@ -30,7 +31,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.07",
+  "VERSION" => "0.08",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -44,6 +45,7 @@ my %FallbackPrereqs = (
   "Moose" => 0,
   "Moose::Autobox" => 0,
   "Pod::Weaver::Role::Section" => 0,
+  "Pod::Weaver::Role::SectionText::SelfCompletion" => 0,
   "Test::More" => 0
 );
 
